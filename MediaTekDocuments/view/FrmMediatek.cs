@@ -1563,5 +1563,7 @@ namespace MediaTekDocuments.view
         }
         #endregion
 
+        int manger;
+
     }
 }
