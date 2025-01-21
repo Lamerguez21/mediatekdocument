@@ -1567,7 +1567,7 @@ namespace MediaTekDocuments.view
 
         private void btnRechercheCommandesDVD_Click(object sender, EventArgs e)
         {
-            int test;
+            
         }
     }
 }
