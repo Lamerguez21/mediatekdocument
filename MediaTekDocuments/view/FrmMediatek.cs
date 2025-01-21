@@ -1562,6 +1562,9 @@ namespace MediaTekDocuments.view
             
         }
         #endregion
-        
+
+        private List<CommandeDocument> lesCommandesDVD = new List<CommandeDocument>();
+
+
     }
 }
