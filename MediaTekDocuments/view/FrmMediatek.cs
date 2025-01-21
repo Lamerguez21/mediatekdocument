@@ -1565,6 +1565,9 @@ namespace MediaTekDocuments.view
 
         private List<CommandeDocument> lesCommandesDVD = new List<CommandeDocument>();
 
-
+        private void btnRechercheCommandesDVD_Click(object sender, EventArgs e)
+        {
+            int test;
+        }
     }
 }
