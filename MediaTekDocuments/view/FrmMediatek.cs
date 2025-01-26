@@ -1563,11 +1563,193 @@ namespace MediaTekDocuments.view
         }
         #endregion
 
+        #region Commandes de DVD
         private List<CommandeDocument> lesCommandesDVD = new List<CommandeDocument>();
 
         private void btnRechercheCommandesDVD_Click(object sender, EventArgs e)
         {
             
         }
+        #endregion
+
+
+        private List<Abonnement> lesAbonnements = new List<Abonnement>();
+
+        private void btnRechercheCoRevues_Click(object sender, EventArgs e)
+        {
+            if (!txbRechecheCommandesRevue.Text.Equals(""))
+            {
+                lesRevues = controller.GetAllRevues();
+                Revue revue = lesRevues.Find(x => x.Id.Equals(txbRechecheCommandesRevue.Text));
+                lesAbonnements = controller.GetAllCommandesRevue(txbRechecheCommandesRevue.Text);
+                if (revue != null)
+                {
+                    AfficheRevueCommandeInfos(revue);
+                    RemplirCommandesRevueListe(lesAbonnements);
+                    gbInfosCommandeRevue.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("numéro introuvable");
+                }
+            }
+        }
+
+        private void AfficheRevueCommandeInfos(Revue revue)
+        {
+            txbCoTitreRevue.Text = revue.Titre;
+            txbCoPeriodicite.Text = revue.Periodicite;
+            txbCoDelai.Text = revue.DelaiMiseADispo.ToString();
+            txbCoGenreRevue.Text = revue.Genre;
+            txbCoPublicRevue.Text = revue.Public;
+            txbCoRayonRevue.Text = revue.Rayon;
+            txbCoCheImageRevue.Text = revue.Image;
+            string image = revue.Image;
+            try
+            {
+                pbxCoRevue.Image = Image.FromFile(image);
+            }
+            catch
+            {
+                pbxCoRevue.Image = null;
+            }   
+        }
+
+        private readonly BindingSource bdgCommandesRevue = new BindingSource();
+
+        private void RemplirCommandesRevueListe(List<Abonnement> lesAbonnements)
+            {
+            if (lesAbonnements != null)
+            {
+                bdgCommandesRevue.DataSource = lesAbonnements;
+                dgvCommandesRevue.DataSource = bdgCommandesRevue;
+                dgvCommandesRevue.Columns["id"].Visible = false;
+                dgvCommandesRevue.Columns["idRevue"].Visible = false;
+                dgvCommandesRevue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            }
+            else
+            {
+                bdgCommandesRevue.DataSource = null;
+            }
+        }
+
+        private void txbRechecheCommandesRevue_TextChanged(object sender, EventArgs e)
+        {
+            effaceTout();
+        }
+
+        private void effaceTout()
+        {
+            txbCoTitreRevue.Text = "";
+            txbCoPeriodicite.Text = "";
+            txbCoDelai.Text = "";
+            txbCoGenreRevue.Text = "";
+            txbCoPublicRevue.Text = "";
+            txbCoRayonRevue.Text = "";
+            txbCoCheImageRevue.Text = "";
+            pbxCoRevue.Image = null;
+            RemplirCommandesRevueListe(null);
+            gbInfosCommandeRevue.Enabled = false;
+            effaceInfosCommandeRevue();
+            btnEnregistrerCommandeRevue.Visible = false;
+
+        }
+
+        private void btnAjoutCommandeRevue_Click(object sender, EventArgs e)
+        {
+            btnEnregistrerCommandeRevue.Visible = true;
+            effaceInfosCommandeRevue();
+        }
+
+        private void effaceInfosCommandeRevue()
+        {
+            txbMontantRevue.Text = "";
+            txbNumeroCommande.Text = "";
+            dtpDateFinCommande.Value = DateTime.Now;
+            dtpDateCommande.Value = DateTime.Now;
+        }
+
+        private void dgvCommandesRevue_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvCommandesRevue.CurrentCell != null)
+            {
+                Abonnement abonnement = (Abonnement)bdgCommandesRevue.List[bdgCommandesRevue.Position];
+                txbNumeroCommande.Text = abonnement.id;
+                dtpDateCommande.Value = abonnement.dateCommande;
+                dtpDateFinCommande.Value = abonnement.dateFinAbonnement;
+                txbMontantRevue.Text = abonnement.montant.ToString();
+                btnEnregistrerCommandeRevue.Visible = false;
+            }
+
+        }
+
+        private void btnEnregistrerCommandeRevue_Click(object sender, EventArgs e)
+        {
+            if (!txbNumeroCommande.Text.Equals("") && !txbMontantRevue.Text.Equals(""))
+            {
+                try
+                {
+                    string id = txbNumeroCommande.Text;
+                    double montant = double.Parse(txbMontantRevue.Text);
+                    DateTime dateCommande = dtpDateCommande.Value;
+                    Commande commande = new Commande(id, dateCommande, montant);
+
+                    string idRevue = txbRechecheCommandesRevue.Text;
+                    DateTime dateFinAbonnement = dtpDateFinCommande.Value;
+
+                    if (controller.CreerCommande(commande) && controller.CreerAbonnement(id, dateFinAbonnement, idRevue))
+                    {
+                        lesAbonnements = controller.GetAllCommandesRevue(txbRechercheDoc.Text);
+                        RemplirCommandesRevueListe(lesAbonnements);
+                        MessageBox.Show("La commande " + id + " a bien été enregistrée.", "Information");
+                    }
+                    else
+                    {
+                        MessageBox.Show("le numéro de commande existe déjà", "Erreur");
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("les informations saisies ne sont pas corrects", "Information");
+                    effaceInfosCommandeRevue();
+                    txbNumeroCommande.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("tous les champs sont obligatoires", "Information");
+            }
+        }
+
+        private void btnSupprCoRevue_Click(object sender, EventArgs e)
+        {
+            Abonnement abonnement = (Abonnement)bdgCommandesRevue.List[bdgCommandesRevue.Position];
+            if (MessageBox.Show("Voulez-vous vraiment supprimer la commande numéro " + abonnement.id + " ?", "Confirmation de suppression", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+
+                try
+                {
+                    controller.supprimerCommande(abonnement.id);
+                    lesAbonnements = controller.GetAllCommandesRevue(txbRechercheDoc.Text);
+                    RemplirCommandesRevueListe(lesAbonnements);
+
+                }
+                catch
+                {
+                    MessageBox.Show("Erreur", "Erreur");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Cette commande ne peut pas être supprimée", "Erreur");
+            }
+        
+        }
+
+        private void tabCommandesRevue_Enter(object sender, EventArgs e)
+        {
+            txbRechecheCommandesRevue.Text = "";
+        }
     }
+    
 }

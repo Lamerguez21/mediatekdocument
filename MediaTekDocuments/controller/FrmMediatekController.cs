@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MediaTekDocuments.model;
 using MediaTekDocuments.dal;
+using System;
 
 namespace MediaTekDocuments.controller
 {
@@ -147,5 +148,26 @@ namespace MediaTekDocuments.controller
         {
             return access.supprimerCommande(id);
         }
+
+        /// <summary>
+        /// récupère les commandes d'une revue
+        /// </summary>
+        /// <param name="idRevue">id de la revue concernée</param>
+        /// <returns>Liste d'objets Abonnement</returns>
+        public List<Abonnement> GetAllCommandesRevue(string idRevue)
+        {
+            return access.GetAllCommandesRevue(idRevue);
+        }
+
+        /// <summary>
+        /// crée un abonnement pour une revue
+        /// </summary>
+        /// <param name="idRevue">id de la revue concernée</param>
+        /// <returns>Liste d'objets Abonnement</returns>
+        public bool CreerAbonnement(string id, DateTime dateFinAbonnement, string idRevue)
+        {
+            return access.CreerAbonnement(id, dateFinAbonnement, idRevue);
+        }
+
     }
 }

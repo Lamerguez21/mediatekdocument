@@ -263,7 +263,36 @@ namespace MediaTekDocuments.dal
             return false;
         }
 
+        /// <summary>
+        /// Retourne toutes les commandes d'une revue à partir de la BDD
+        /// </summary>
+        /// <returns>Liste d'objets Abonnement</returns>
+        public List<Abonnement> GetAllCommandesRevue(string idRevue)
+        {
+            String jsonId = "{ \"id\" : \"" + idRevue + "\"}";
+            List<Abonnement> lesCommandesRevues = TraitementRecup<Abonnement>(GET, "abonnement/" + jsonId, null);
+            return lesCommandesRevues;
+        }
 
+        /// <summary>
+        /// écriture d'un abonnement en base de données
+        /// </summary>
+        /// <param name="abonnement">abonnement à insérer</param>
+        /// <returns>true si l'insertion a pu se faire (retour != null)</returns>
+        public bool CreerAbonnement(string id, DateTime dateFinAbonnement, string idRevue)
+        {
+            String jsonAbonnement = "{ \"id\" : \"" + id + "\", \"dateFinAbonnement\" : \"" + dateFinAbonnement + "\", \"idRevue\" : \"" + idRevue + "\"}";
+            try
+            {
+                List<Abonnement> liste = TraitementRecup<Abonnement>(POST, "abonnement", "champs=" + jsonAbonnement);
+                return (liste != null);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return false;
+        }
 
         /// <summary>
         /// Traitement de la récupération du retour de l'api, avec conversion du json en liste pour les select (GET)
