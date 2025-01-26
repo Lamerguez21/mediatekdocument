@@ -1416,7 +1416,7 @@ namespace MediaTekDocuments.view
 
         private void tabCommandesLivres_Enter(object sender, EventArgs e)
         {
-            EffaceToutInfos();
+            txbRechercheDoc.Text = "";
         }
 
         private void dgvCommandesLivre_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -1699,7 +1699,7 @@ namespace MediaTekDocuments.view
 
                     if (controller.CreerCommande(commande) && controller.CreerAbonnement(id, dateFinAbonnement, idRevue))
                     {
-                        lesAbonnements = controller.GetAllCommandesRevue(txbRechercheDoc.Text);
+                        lesAbonnements = controller.GetAllCommandesRevue(txbRechecheCommandesRevue.Text);
                         RemplirCommandesRevueListe(lesAbonnements);
                         MessageBox.Show("La commande " + id + " a bien été enregistrée.", "Information");
                     }

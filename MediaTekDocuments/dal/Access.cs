@@ -277,11 +277,12 @@ namespace MediaTekDocuments.dal
         /// <summary>
         /// écriture d'un abonnement en base de données
         /// </summary>
-        /// <param name="abonnement">abonnement à insérer</param>
+        /// <param name=</param>
         /// <returns>true si l'insertion a pu se faire (retour != null)</returns>
         public bool CreerAbonnement(string id, DateTime dateFinAbonnement, string idRevue)
         {
-            String jsonAbonnement = "{ \"id\" : \"" + id + "\", \"dateFinAbonnement\" : \"" + dateFinAbonnement + "\", \"idRevue\" : \"" + idRevue + "\"}";
+            string dateFormatted = dateFinAbonnement.ToString("yyyy-MM-dd");
+            String jsonAbonnement = "{ \"id\" : \"" + id + "\", \"dateFinAbonnement\" : \"" + dateFormatted + "\", \"idRevue\" : \"" + idRevue + "\"}";
             try
             {
                 List<Abonnement> liste = TraitementRecup<Abonnement>(POST, "abonnement", "champs=" + jsonAbonnement);
