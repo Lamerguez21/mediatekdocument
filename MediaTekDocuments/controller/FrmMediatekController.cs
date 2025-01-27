@@ -169,5 +169,14 @@ namespace MediaTekDocuments.controller
             return access.CreerAbonnement(id, dateFinAbonnement, idRevue);
         }
 
+        /// <summary>
+        /// getter sur les échéances
+        /// </summary>
+        /// <returns>Liste d'objets Abonnement</returns>
+        public List<Abonnement> GetAllEcheanceAbonnement()
+        {
+            return access.GetAllEcheanceAbonnement();
+        }
+
     }
 }

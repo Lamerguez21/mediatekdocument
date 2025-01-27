@@ -45,6 +45,17 @@ namespace MediaTekDocuments.view
                 cbx.SelectedIndex = -1;
             }
         }
+
+
+        /// <summary>
+        /// Ouvre la fenêtre qui affiche la liste des abonnemnts qui expirent dans moins de 30 jours
+        /// </summary>
+        private void tabOngletsApplication_Enter(object sender, EventArgs e)
+        {
+            FrmAlerteFinAbonnement frmAlerte = new FrmAlerteFinAbonnement();
+            frmAlerte.ShowDialog();
+        }
+
         #endregion
 
         #region Onglet Livres
@@ -1559,7 +1570,7 @@ namespace MediaTekDocuments.view
             {
                 MessageBox.Show("Cette commande ne peut pas être supprimée", "Erreur");
             }
-            
+
         }
         #endregion
 
@@ -1568,10 +1579,11 @@ namespace MediaTekDocuments.view
 
         private void btnRechercheCommandesDVD_Click(object sender, EventArgs e)
         {
-            
+
         }
         #endregion
 
+        #region Abonnements de revues
 
         private List<Abonnement> lesAbonnements = new List<Abonnement>();
 
@@ -1612,19 +1624,20 @@ namespace MediaTekDocuments.view
             catch
             {
                 pbxCoRevue.Image = null;
-            }   
+            }
         }
 
         private readonly BindingSource bdgCommandesRevue = new BindingSource();
 
         private void RemplirCommandesRevueListe(List<Abonnement> lesAbonnements)
-            {
+        {
             if (lesAbonnements != null)
             {
                 bdgCommandesRevue.DataSource = lesAbonnements;
                 dgvCommandesRevue.DataSource = bdgCommandesRevue;
                 dgvCommandesRevue.Columns["id"].Visible = false;
                 dgvCommandesRevue.Columns["idRevue"].Visible = false;
+                dgvCommandesRevue.Columns["titre"].Visible = false;
                 dgvCommandesRevue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             }
             else
@@ -1724,13 +1737,17 @@ namespace MediaTekDocuments.view
         private void btnSupprCoRevue_Click(object sender, EventArgs e)
         {
             Abonnement abonnement = (Abonnement)bdgCommandesRevue.List[bdgCommandesRevue.Position];
-            if (MessageBox.Show("Voulez-vous vraiment supprimer la commande numéro " + abonnement.id + " ?", "Confirmation de suppression", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
+            DateTime dateFinAbonnement = abonnement.dateFinAbonnement;
+            DateTime dateCommande = abonnement.dateCommande;
+            lesExemplaires = controller.GetExemplairesRevue(txbRechecheCommandesRevue.Text);
 
+            if (MessageBox.Show("Voulez-vous vraiment supprimer la commande numéro " + abonnement.id + " ?", "Confirmation de suppression", MessageBoxButtons.YesNo) == DialogResult.Yes
+                && Exemplaire(lesExemplaires, dateFinAbonnement, dateCommande))
+            {
                 try
                 {
                     controller.supprimerCommande(abonnement.id);
-                    lesAbonnements = controller.GetAllCommandesRevue(txbRechercheDoc.Text);
+                    lesAbonnements = controller.GetAllCommandesRevue(txbRechecheCommandesRevue.Text);
                     RemplirCommandesRevueListe(lesAbonnements);
 
                 }
@@ -1741,15 +1758,51 @@ namespace MediaTekDocuments.view
             }
             else
             {
-                MessageBox.Show("Cette commande ne peut pas être supprimée", "Erreur");
+                MessageBox.Show("Cet abonnement ne peut pas être supprimé car il contient des exemplaires", "Erreur");
             }
-        
+
         }
 
         private void tabCommandesRevue_Enter(object sender, EventArgs e)
         {
             txbRechecheCommandesRevue.Text = "";
         }
+
+        private bool ParutionDansAbonnement(DateTime dateCommande, DateTime dateFinAbonnement, DateTime dateParution)
+        {
+            return dateParution >= dateCommande && dateParution <= dateFinAbonnement;
+        }
+
+        private bool Exemplaire(List<Exemplaire> lesExemplaires, DateTime dateFinAbonnement, DateTime dateCommande)
+        {
+            foreach (var exemplaire in lesExemplaires)
+            {
+                if (ParutionDansAbonnement(dateCommande, dateFinAbonnement, exemplaire.DateAchat))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void dgvCommandesRevue_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string titreColonne = dgvCommandesRevue.Columns[e.ColumnIndex].HeaderText;
+            List<Abonnement> sortedList = new List<Abonnement>();
+            switch (titreColonne)
+            {
+                case "dateCommande":
+                    sortedList = lesAbonnements.OrderBy(o => o.dateCommande).Reverse().ToList();
+                    break;
+                case "dateFinAbonnement":
+                    sortedList = lesAbonnements.OrderBy(o => o.dateFinAbonnement).Reverse().ToList();
+                    break;
+                case "montant":
+                    sortedList = lesAbonnements.OrderBy(o => o.montant).ToList();
+                    break;
+            }
+            RemplirCommandesRevueListe(sortedList);
+        }
     }
-    
+    #endregion
 }

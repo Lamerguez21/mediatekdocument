@@ -167,7 +167,6 @@ namespace MediaTekDocuments.dal
             return false;
         }
 
-
         /// <summary>
         /// Retourne toutes les commandes d'un livre à partir de la BDD
         /// </summary>
@@ -293,6 +292,16 @@ namespace MediaTekDocuments.dal
                 Console.WriteLine(ex.Message);
             }
             return false;
+        }
+
+        /// <summary>
+        ///récupère tous les abonnemnts qui expirent dans moins de 30 jours
+        /// </summary>
+        /// <returns>Liste d'objets abonnement</returns>
+        public List<Abonnement> GetAllEcheanceAbonnement()
+        {
+            List<Abonnement> lesEcheances = TraitementRecup<Abonnement>(GET, "echeance", null);
+            return lesEcheances;
         }
 
         /// <summary>
