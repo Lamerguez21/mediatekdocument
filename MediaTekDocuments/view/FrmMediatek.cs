@@ -1574,15 +1574,6 @@ namespace MediaTekDocuments.view
         }
         #endregion
 
-        #region Commandes de DVD
-        private List<CommandeDocument> lesCommandesDVD = new List<CommandeDocument>();
-
-        private void btnRechercheCommandesDVD_Click(object sender, EventArgs e)
-        {
-
-        }
-        #endregion
-
         #region Abonnements de revues
 
         private List<Abonnement> lesAbonnements = new List<Abonnement>();
@@ -1803,6 +1794,17 @@ namespace MediaTekDocuments.view
             }
             RemplirCommandesRevueListe(sortedList);
         }
+
+        #endregion
+
+        #region Commandes de DVD
+        private List<CommandeDocument> lesCommandesDVD = new List<CommandeDocument>();
+
+        private void btnRechercheCommandesDVD_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
     }
-    #endregion
 }
