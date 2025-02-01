@@ -171,9 +171,9 @@ namespace MediaTekDocuments.dal
         /// Retourne toutes les commandes d'un livre à partir de la BDD
         /// </summary>
         /// <returns>Liste d'objets CommandeDocument</returns>
-        public List<CommandeDocument> GetAllCommandesLivre(string idLivre)
+        public List<CommandeDocument> GetAllCommandes(string id)
         {
-            String jsonId = convertToJson("id", idLivre);
+            String jsonId = convertToJson("id", id);
             List<CommandeDocument> lesCommandesLivre = TraitementRecup<CommandeDocument>(GET, "commandedocument/" + jsonId, null);
             return lesCommandesLivre;
         }

@@ -103,9 +103,9 @@ namespace MediaTekDocuments.controller
         /// </summary>
         /// <param name="idLivre">id du livre concerné</param>
         /// <returns>Liste d'objets CommandeDocument</returns>
-        public List<CommandeDocument> GetAllCommandesLivre(string idLivre)
+        public List<CommandeDocument> GetAllCommandes(string id)
         {
-            return access.GetAllCommandesLivre(idLivre);
+            return access.GetAllCommandes(id);
         }
 
         /// <summary>

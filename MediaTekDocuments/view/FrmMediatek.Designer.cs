@@ -29,27 +29,27 @@ namespace MediaTekDocuments.view
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle140 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle141 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle142 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle143 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle144 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle145 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle146 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle147 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabOngletsApplication = new System.Windows.Forms.TabControl();
             this.tabLivres = new System.Windows.Forms.TabPage();
             this.grpLivresInfos = new System.Windows.Forms.GroupBox();
@@ -251,9 +251,9 @@ namespace MediaTekDocuments.view
             this.label83 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txbDuree = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txbRayonDVD = new System.Windows.Forms.TextBox();
+            this.txbPublicDVD = new System.Windows.Forms.TextBox();
+            this.txbGenreDVD = new System.Windows.Forms.TextBox();
             this.txbRealisateur = new System.Windows.Forms.TextBox();
             this.txbCoSynopsis = new System.Windows.Forms.TextBox();
             this.txbTitreDVD = new System.Windows.Forms.TextBox();
@@ -301,6 +301,26 @@ namespace MediaTekDocuments.view
             this.btnRechercheCoRevues = new System.Windows.Forms.Button();
             this.txbRechecheCommandesRevue = new System.Windows.Forms.TextBox();
             this.label84 = new System.Windows.Forms.Label();
+            this.gbxInfosCommandeDVD = new System.Windows.Forms.GroupBox();
+            this.gbInfosSuiviDVD = new System.Windows.Forms.GroupBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.btnEnregistrerCommandeDVD = new System.Windows.Forms.Button();
+            this.txbNumCommandeDVD = new System.Windows.Forms.TextBox();
+            this.txbNbExemplairesCoDVD = new System.Windows.Forms.TextBox();
+            this.txbMontantDVD = new System.Windows.Forms.TextBox();
+            this.dtpCommandeDVD = new System.Windows.Forms.DateTimePicker();
+            this.btnSuiviDVD = new System.Windows.Forms.Button();
+            this.btnAjoutCommandeDVD = new System.Windows.Forms.Button();
+            this.btnSupprimerCommandeDVD = new System.Windows.Forms.Button();
+            this.label101 = new System.Windows.Forms.Label();
+            this.btnRetourDvd = new System.Windows.Forms.Button();
+            this.btnModifierSuiviDvd = new System.Windows.Forms.Button();
+            this.cbxSuiviDvd = new System.Windows.Forms.ComboBox();
+            this.btnEnregistrerModificationSuiviDvd = new System.Windows.Forms.Button();
+            this.txbSuiviDVD = new System.Windows.Forms.TextBox();
             this.tabOngletsApplication.SuspendLayout();
             this.tabLivres.SuspendLayout();
             this.grpLivresInfos.SuspendLayout();
@@ -339,6 +359,8 @@ namespace MediaTekDocuments.view
             ((System.ComponentModel.ISupportInitialize)(this.dgvCommandesRevue)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCoRevue)).BeginInit();
+            this.gbxInfosCommandeDVD.SuspendLayout();
+            this.gbInfosSuiviDVD.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabOngletsApplication
@@ -765,36 +787,36 @@ namespace MediaTekDocuments.view
             this.dgvLivresListe.AllowUserToDeleteRows = false;
             this.dgvLivresListe.AllowUserToResizeColumns = false;
             this.dgvLivresListe.AllowUserToResizeRows = false;
-            dataGridViewCellStyle136.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle136.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle136.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle136.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle136.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle136.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle136.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLivresListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle136;
+            dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle88.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle88.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle88.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle88.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle88.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle88.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLivresListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle88;
             this.dgvLivresListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle137.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle137.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle137.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle137.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle137.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle137.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle137.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLivresListe.DefaultCellStyle = dataGridViewCellStyle137;
+            dataGridViewCellStyle89.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle89.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle89.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle89.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle89.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle89.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle89.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLivresListe.DefaultCellStyle = dataGridViewCellStyle89;
             this.dgvLivresListe.Location = new System.Drawing.Point(14, 231);
             this.dgvLivresListe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvLivresListe.MultiSelect = false;
             this.dgvLivresListe.Name = "dgvLivresListe";
             this.dgvLivresListe.ReadOnly = true;
-            dataGridViewCellStyle138.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle138.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle138.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle138.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle138.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle138.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle138.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLivresListe.RowHeadersDefaultCellStyle = dataGridViewCellStyle138;
+            dataGridViewCellStyle90.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle90.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle90.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle90.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle90.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle90.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle90.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLivresListe.RowHeadersDefaultCellStyle = dataGridViewCellStyle90;
             this.dgvLivresListe.RowHeadersVisible = false;
             this.dgvLivresListe.RowHeadersWidth = 62;
             this.dgvLivresListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1231,36 +1253,36 @@ namespace MediaTekDocuments.view
             this.dgvDvdListe.AllowUserToDeleteRows = false;
             this.dgvDvdListe.AllowUserToResizeColumns = false;
             this.dgvDvdListe.AllowUserToResizeRows = false;
-            dataGridViewCellStyle139.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle139.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle139.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle139.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle139.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle139.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle139.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDvdListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle139;
+            dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle91.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle91.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle91.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle91.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle91.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle91.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDvdListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle91;
             this.dgvDvdListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle140.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle140.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle140.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle140.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle140.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle140.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle140.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDvdListe.DefaultCellStyle = dataGridViewCellStyle140;
+            dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle92.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle92.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle92.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle92.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle92.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle92.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDvdListe.DefaultCellStyle = dataGridViewCellStyle92;
             this.dgvDvdListe.Location = new System.Drawing.Point(14, 231);
             this.dgvDvdListe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDvdListe.MultiSelect = false;
             this.dgvDvdListe.Name = "dgvDvdListe";
             this.dgvDvdListe.ReadOnly = true;
-            dataGridViewCellStyle141.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle141.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle141.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle141.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle141.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle141.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle141.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDvdListe.RowHeadersDefaultCellStyle = dataGridViewCellStyle141;
+            dataGridViewCellStyle93.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle93.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle93.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle93.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle93.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle93.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle93.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDvdListe.RowHeadersDefaultCellStyle = dataGridViewCellStyle93;
             this.dgvDvdListe.RowHeadersVisible = false;
             this.dgvDvdListe.RowHeadersWidth = 62;
             this.dgvDvdListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1673,36 +1695,36 @@ namespace MediaTekDocuments.view
             this.dgvRevuesListe.AllowUserToDeleteRows = false;
             this.dgvRevuesListe.AllowUserToResizeColumns = false;
             this.dgvRevuesListe.AllowUserToResizeRows = false;
-            dataGridViewCellStyle142.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle142.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle142.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle142.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle142.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle142.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle142.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRevuesListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle142;
+            dataGridViewCellStyle94.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle94.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle94.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle94.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle94.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle94.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle94.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRevuesListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle94;
             this.dgvRevuesListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle143.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle143.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle143.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle143.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle143.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle143.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle143.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRevuesListe.DefaultCellStyle = dataGridViewCellStyle143;
+            dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle95.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle95.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle95.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle95.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle95.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle95.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRevuesListe.DefaultCellStyle = dataGridViewCellStyle95;
             this.dgvRevuesListe.Location = new System.Drawing.Point(14, 231);
             this.dgvRevuesListe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvRevuesListe.MultiSelect = false;
             this.dgvRevuesListe.Name = "dgvRevuesListe";
             this.dgvRevuesListe.ReadOnly = true;
-            dataGridViewCellStyle144.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle144.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle144.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle144.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle144.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle144.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle144.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRevuesListe.RowHeadersDefaultCellStyle = dataGridViewCellStyle144;
+            dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle96.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle96.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle96.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle96.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle96.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle96.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRevuesListe.RowHeadersDefaultCellStyle = dataGridViewCellStyle96;
             this.dgvRevuesListe.RowHeadersVisible = false;
             this.dgvRevuesListe.RowHeadersWidth = 62;
             this.dgvRevuesListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1954,36 +1976,36 @@ namespace MediaTekDocuments.view
             this.dgvReceptionExemplairesListe.AllowUserToDeleteRows = false;
             this.dgvReceptionExemplairesListe.AllowUserToResizeColumns = false;
             this.dgvReceptionExemplairesListe.AllowUserToResizeRows = false;
-            dataGridViewCellStyle145.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle145.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle145.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle145.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle145.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle145.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle145.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReceptionExemplairesListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle145;
+            dataGridViewCellStyle97.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle97.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle97.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle97.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle97.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle97.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle97.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReceptionExemplairesListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle97;
             this.dgvReceptionExemplairesListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle146.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle146.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle146.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle146.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle146.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle146.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle146.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvReceptionExemplairesListe.DefaultCellStyle = dataGridViewCellStyle146;
+            dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle98.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle98.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle98.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle98.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle98.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle98.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvReceptionExemplairesListe.DefaultCellStyle = dataGridViewCellStyle98;
             this.dgvReceptionExemplairesListe.Location = new System.Drawing.Point(225, 340);
             this.dgvReceptionExemplairesListe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvReceptionExemplairesListe.MultiSelect = false;
             this.dgvReceptionExemplairesListe.Name = "dgvReceptionExemplairesListe";
             this.dgvReceptionExemplairesListe.ReadOnly = true;
-            dataGridViewCellStyle147.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle147.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle147.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle147.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle147.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle147.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle147.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReceptionExemplairesListe.RowHeadersDefaultCellStyle = dataGridViewCellStyle147;
+            dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle99.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle99.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle99.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle99.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle99.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle99.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReceptionExemplairesListe.RowHeadersDefaultCellStyle = dataGridViewCellStyle99;
             this.dgvReceptionExemplairesListe.RowHeadersVisible = false;
             this.dgvReceptionExemplairesListe.RowHeadersWidth = 62;
             this.dgvReceptionExemplairesListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -2415,33 +2437,33 @@ namespace MediaTekDocuments.view
             this.dgvCommandesLivre.AllowUserToDeleteRows = false;
             this.dgvCommandesLivre.AllowUserToResizeColumns = false;
             this.dgvCommandesLivre.AllowUserToResizeRows = false;
-            dataGridViewCellStyle127.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle127.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle127.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle127.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle127.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle127.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle127.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCommandesLivre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle127;
+            dataGridViewCellStyle100.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle100.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle100.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle100.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle100.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle100.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle100.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCommandesLivre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle100;
             this.dgvCommandesLivre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle128.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle128.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle128.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle128.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle128.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle128.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCommandesLivre.DefaultCellStyle = dataGridViewCellStyle128;
+            dataGridViewCellStyle101.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle101.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle101.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle101.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle101.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle101.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle101.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCommandesLivre.DefaultCellStyle = dataGridViewCellStyle101;
             this.dgvCommandesLivre.Location = new System.Drawing.Point(294, 369);
             this.dgvCommandesLivre.Name = "dgvCommandesLivre";
-            dataGridViewCellStyle129.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle129.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle129.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle129.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle129.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle129.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle129.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCommandesLivre.RowHeadersDefaultCellStyle = dataGridViewCellStyle129;
+            dataGridViewCellStyle102.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle102.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle102.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle102.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle102.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle102.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle102.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCommandesLivre.RowHeadersDefaultCellStyle = dataGridViewCellStyle102;
             this.dgvCommandesLivre.RowHeadersVisible = false;
             this.dgvCommandesLivre.RowHeadersWidth = 62;
             this.dgvCommandesLivre.RowTemplate.Height = 28;
@@ -2673,6 +2695,8 @@ namespace MediaTekDocuments.view
             // 
             // tabCommandesDVD
             // 
+            this.tabCommandesDVD.Controls.Add(this.gbInfosSuiviDVD);
+            this.tabCommandesDVD.Controls.Add(this.gbxInfosCommandeDVD);
             this.tabCommandesDVD.Controls.Add(this.dgvCommandesDVD);
             this.tabCommandesDVD.Controls.Add(this.gbxInformationsCoDVD);
             this.tabCommandesDVD.Controls.Add(this.txbRechercheCommandesDVD);
@@ -2685,40 +2709,45 @@ namespace MediaTekDocuments.view
             this.tabCommandesDVD.TabIndex = 6;
             this.tabCommandesDVD.Text = "Commandes de DVD";
             this.tabCommandesDVD.UseVisualStyleBackColor = true;
+            this.tabCommandesDVD.Enter += new System.EventHandler(this.tabCommandesDVD_Enter);
             // 
             // dgvCommandesDVD
             // 
-            dataGridViewCellStyle130.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle130.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle130.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle130.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle130.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle130.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle130.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCommandesDVD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle130;
+            dataGridViewCellStyle85.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle85.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle85.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle85.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle85.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle85.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle85.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCommandesDVD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle85;
             this.dgvCommandesDVD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle131.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle131.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle131.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle131.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle131.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle131.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCommandesDVD.DefaultCellStyle = dataGridViewCellStyle131;
+            dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle86.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle86.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle86.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle86.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle86.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle86.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCommandesDVD.DefaultCellStyle = dataGridViewCellStyle86;
             this.dgvCommandesDVD.Location = new System.Drawing.Point(338, 382);
             this.dgvCommandesDVD.Name = "dgvCommandesDVD";
-            dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle132.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle132.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle132.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle132.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle132.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle132.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCommandesDVD.RowHeadersDefaultCellStyle = dataGridViewCellStyle132;
+            dataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle87.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle87.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle87.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle87.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle87.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle87.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCommandesDVD.RowHeadersDefaultCellStyle = dataGridViewCellStyle87;
+            this.dgvCommandesDVD.RowHeadersVisible = false;
             this.dgvCommandesDVD.RowHeadersWidth = 62;
             this.dgvCommandesDVD.RowTemplate.Height = 28;
-            this.dgvCommandesDVD.Size = new System.Drawing.Size(632, 263);
+            this.dgvCommandesDVD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCommandesDVD.Size = new System.Drawing.Size(632, 279);
             this.dgvCommandesDVD.TabIndex = 4;
+            this.dgvCommandesDVD.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCommandesDVD_ColumnHeaderMouseClick);
+            this.dgvCommandesDVD.SelectionChanged += new System.EventHandler(this.dgvCommandesDVD_SelectionChanged);
             // 
             // gbxInformationsCoDVD
             // 
@@ -2726,9 +2755,9 @@ namespace MediaTekDocuments.view
             this.gbxInformationsCoDVD.Controls.Add(this.label83);
             this.gbxInformationsCoDVD.Controls.Add(this.pictureBox2);
             this.gbxInformationsCoDVD.Controls.Add(this.txbDuree);
-            this.gbxInformationsCoDVD.Controls.Add(this.textBox7);
-            this.gbxInformationsCoDVD.Controls.Add(this.textBox6);
-            this.gbxInformationsCoDVD.Controls.Add(this.textBox5);
+            this.gbxInformationsCoDVD.Controls.Add(this.txbRayonDVD);
+            this.gbxInformationsCoDVD.Controls.Add(this.txbPublicDVD);
+            this.gbxInformationsCoDVD.Controls.Add(this.txbGenreDVD);
             this.gbxInformationsCoDVD.Controls.Add(this.txbRealisateur);
             this.gbxInformationsCoDVD.Controls.Add(this.txbCoSynopsis);
             this.gbxInformationsCoDVD.Controls.Add(this.txbTitreDVD);
@@ -2781,29 +2810,29 @@ namespace MediaTekDocuments.view
             this.txbDuree.Size = new System.Drawing.Size(158, 26);
             this.txbDuree.TabIndex = 13;
             // 
-            // textBox7
+            // txbRayonDVD
             // 
-            this.textBox7.Location = new System.Drawing.Point(176, 229);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(340, 26);
-            this.textBox7.TabIndex = 12;
+            this.txbRayonDVD.Location = new System.Drawing.Point(176, 229);
+            this.txbRayonDVD.Name = "txbRayonDVD";
+            this.txbRayonDVD.ReadOnly = true;
+            this.txbRayonDVD.Size = new System.Drawing.Size(340, 26);
+            this.txbRayonDVD.TabIndex = 12;
             // 
-            // textBox6
+            // txbPublicDVD
             // 
-            this.textBox6.Location = new System.Drawing.Point(176, 194);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(340, 26);
-            this.textBox6.TabIndex = 11;
+            this.txbPublicDVD.Location = new System.Drawing.Point(176, 194);
+            this.txbPublicDVD.Name = "txbPublicDVD";
+            this.txbPublicDVD.ReadOnly = true;
+            this.txbPublicDVD.Size = new System.Drawing.Size(340, 26);
+            this.txbPublicDVD.TabIndex = 11;
             // 
-            // textBox5
+            // txbGenreDVD
             // 
-            this.textBox5.Location = new System.Drawing.Point(176, 162);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(340, 26);
-            this.textBox5.TabIndex = 10;
+            this.txbGenreDVD.Location = new System.Drawing.Point(176, 162);
+            this.txbGenreDVD.Name = "txbGenreDVD";
+            this.txbGenreDVD.ReadOnly = true;
+            this.txbGenreDVD.Size = new System.Drawing.Size(340, 26);
+            this.txbGenreDVD.TabIndex = 10;
             // 
             // txbRealisateur
             // 
@@ -2907,6 +2936,7 @@ namespace MediaTekDocuments.view
             this.txbRechercheCommandesDVD.Name = "txbRechercheCommandesDVD";
             this.txbRechercheCommandesDVD.Size = new System.Drawing.Size(176, 26);
             this.txbRechercheCommandesDVD.TabIndex = 2;
+            this.txbRechercheCommandesDVD.TextChanged += new System.EventHandler(this.txbRechercheCommandesDVD_TextChanged);
             // 
             // btnRechercheCommandesDVD
             // 
@@ -3068,33 +3098,33 @@ namespace MediaTekDocuments.view
             // 
             // dgvCommandesRevue
             // 
-            dataGridViewCellStyle133.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle133.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle133.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle133.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle133.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle133.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle133.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCommandesRevue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle133;
+            dataGridViewCellStyle103.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle103.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle103.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle103.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle103.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle103.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle103.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCommandesRevue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle103;
             this.dgvCommandesRevue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle134.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle134.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle134.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle134.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle134.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle134.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle134.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCommandesRevue.DefaultCellStyle = dataGridViewCellStyle134;
+            dataGridViewCellStyle104.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle104.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle104.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle104.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle104.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle104.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle104.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCommandesRevue.DefaultCellStyle = dataGridViewCellStyle104;
             this.dgvCommandesRevue.Location = new System.Drawing.Point(49, 397);
             this.dgvCommandesRevue.Name = "dgvCommandesRevue";
-            dataGridViewCellStyle135.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle135.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle135.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle135.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle135.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle135.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle135.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCommandesRevue.RowHeadersDefaultCellStyle = dataGridViewCellStyle135;
+            dataGridViewCellStyle105.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle105.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle105.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle105.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle105.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle105.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle105.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCommandesRevue.RowHeadersDefaultCellStyle = dataGridViewCellStyle105;
             this.dgvCommandesRevue.RowHeadersVisible = false;
             this.dgvCommandesRevue.RowHeadersWidth = 62;
             this.dgvCommandesRevue.RowTemplate.Height = 28;
@@ -3304,6 +3334,206 @@ namespace MediaTekDocuments.view
             this.label84.TabIndex = 0;
             this.label84.Text = "Numéro de revue :";
             // 
+            // gbxInfosCommandeDVD
+            // 
+            this.gbxInfosCommandeDVD.Controls.Add(this.btnSupprimerCommandeDVD);
+            this.gbxInfosCommandeDVD.Controls.Add(this.btnAjoutCommandeDVD);
+            this.gbxInfosCommandeDVD.Controls.Add(this.btnSuiviDVD);
+            this.gbxInfosCommandeDVD.Controls.Add(this.dtpCommandeDVD);
+            this.gbxInfosCommandeDVD.Controls.Add(this.txbMontantDVD);
+            this.gbxInfosCommandeDVD.Controls.Add(this.txbNbExemplairesCoDVD);
+            this.gbxInfosCommandeDVD.Controls.Add(this.txbNumCommandeDVD);
+            this.gbxInfosCommandeDVD.Controls.Add(this.btnEnregistrerCommandeDVD);
+            this.gbxInfosCommandeDVD.Controls.Add(this.label100);
+            this.gbxInfosCommandeDVD.Controls.Add(this.label99);
+            this.gbxInfosCommandeDVD.Controls.Add(this.label98);
+            this.gbxInfosCommandeDVD.Controls.Add(this.label97);
+            this.gbxInfosCommandeDVD.Location = new System.Drawing.Point(22, 685);
+            this.gbxInfosCommandeDVD.Name = "gbxInfosCommandeDVD";
+            this.gbxInfosCommandeDVD.Size = new System.Drawing.Size(704, 272);
+            this.gbxInfosCommandeDVD.TabIndex = 5;
+            this.gbxInfosCommandeDVD.TabStop = false;
+            this.gbxInfosCommandeDVD.Text = "Informations de commande";
+            // 
+            // gbInfosSuiviDVD
+            // 
+            this.gbInfosSuiviDVD.Controls.Add(this.txbSuiviDVD);
+            this.gbInfosSuiviDVD.Controls.Add(this.btnEnregistrerModificationSuiviDvd);
+            this.gbInfosSuiviDVD.Controls.Add(this.cbxSuiviDvd);
+            this.gbInfosSuiviDVD.Controls.Add(this.btnModifierSuiviDvd);
+            this.gbInfosSuiviDVD.Controls.Add(this.btnRetourDvd);
+            this.gbInfosSuiviDVD.Controls.Add(this.label101);
+            this.gbInfosSuiviDVD.Location = new System.Drawing.Point(751, 685);
+            this.gbInfosSuiviDVD.Name = "gbInfosSuiviDVD";
+            this.gbInfosSuiviDVD.Size = new System.Drawing.Size(470, 272);
+            this.gbInfosSuiviDVD.TabIndex = 6;
+            this.gbInfosSuiviDVD.TabStop = false;
+            this.gbInfosSuiviDVD.Text = "Informations de suivi";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.Location = new System.Drawing.Point(21, 40);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(196, 20);
+            this.label97.TabIndex = 0;
+            this.label97.Text = "numéro de commande :";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.Location = new System.Drawing.Point(24, 86);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(193, 20);
+            this.label98.TabIndex = 1;
+            this.label98.Text = "nombre d\'exemplaires :";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.Location = new System.Drawing.Point(24, 130);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(85, 20);
+            this.label99.TabIndex = 2;
+            this.label99.Text = "montant :";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.Location = new System.Drawing.Point(24, 172);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(172, 20);
+            this.label100.TabIndex = 3;
+            this.label100.Text = "date de commande :";
+            // 
+            // btnEnregistrerCommandeDVD
+            // 
+            this.btnEnregistrerCommandeDVD.Location = new System.Drawing.Point(72, 216);
+            this.btnEnregistrerCommandeDVD.Name = "btnEnregistrerCommandeDVD";
+            this.btnEnregistrerCommandeDVD.Size = new System.Drawing.Size(303, 39);
+            this.btnEnregistrerCommandeDVD.TabIndex = 4;
+            this.btnEnregistrerCommandeDVD.Text = "Enregistrer la nouvelle commande";
+            this.btnEnregistrerCommandeDVD.UseVisualStyleBackColor = true;
+            this.btnEnregistrerCommandeDVD.Click += new System.EventHandler(this.btnEnregistrerCommandeDVD_Click);
+            // 
+            // txbNumCommandeDVD
+            // 
+            this.txbNumCommandeDVD.Location = new System.Drawing.Point(239, 37);
+            this.txbNumCommandeDVD.Name = "txbNumCommandeDVD";
+            this.txbNumCommandeDVD.Size = new System.Drawing.Size(162, 26);
+            this.txbNumCommandeDVD.TabIndex = 5;
+            // 
+            // txbNbExemplairesCoDVD
+            // 
+            this.txbNbExemplairesCoDVD.Location = new System.Drawing.Point(239, 80);
+            this.txbNbExemplairesCoDVD.Name = "txbNbExemplairesCoDVD";
+            this.txbNbExemplairesCoDVD.Size = new System.Drawing.Size(162, 26);
+            this.txbNbExemplairesCoDVD.TabIndex = 6;
+            // 
+            // txbMontantDVD
+            // 
+            this.txbMontantDVD.Location = new System.Drawing.Point(239, 127);
+            this.txbMontantDVD.Name = "txbMontantDVD";
+            this.txbMontantDVD.Size = new System.Drawing.Size(162, 26);
+            this.txbMontantDVD.TabIndex = 7;
+            // 
+            // dtpCommandeDVD
+            // 
+            this.dtpCommandeDVD.Location = new System.Drawing.Point(239, 172);
+            this.dtpCommandeDVD.Name = "dtpCommandeDVD";
+            this.dtpCommandeDVD.Size = new System.Drawing.Size(200, 26);
+            this.dtpCommandeDVD.TabIndex = 8;
+            // 
+            // btnSuiviDVD
+            // 
+            this.btnSuiviDVD.Location = new System.Drawing.Point(571, 216);
+            this.btnSuiviDVD.Name = "btnSuiviDVD";
+            this.btnSuiviDVD.Size = new System.Drawing.Size(113, 37);
+            this.btnSuiviDVD.TabIndex = 9;
+            this.btnSuiviDVD.Text = "Suivi";
+            this.btnSuiviDVD.UseVisualStyleBackColor = true;
+            this.btnSuiviDVD.Click += new System.EventHandler(this.btnSuiviDVD_Click);
+            // 
+            // btnAjoutCommandeDVD
+            // 
+            this.btnAjoutCommandeDVD.Location = new System.Drawing.Point(428, 31);
+            this.btnAjoutCommandeDVD.Name = "btnAjoutCommandeDVD";
+            this.btnAjoutCommandeDVD.Size = new System.Drawing.Size(256, 32);
+            this.btnAjoutCommandeDVD.TabIndex = 10;
+            this.btnAjoutCommandeDVD.Text = "Ajouter une commande";
+            this.btnAjoutCommandeDVD.UseVisualStyleBackColor = true;
+            this.btnAjoutCommandeDVD.Click += new System.EventHandler(this.btnAjoutCommandeDVD_Click);
+            // 
+            // btnSupprimerCommandeDVD
+            // 
+            this.btnSupprimerCommandeDVD.Location = new System.Drawing.Point(428, 80);
+            this.btnSupprimerCommandeDVD.Name = "btnSupprimerCommandeDVD";
+            this.btnSupprimerCommandeDVD.Size = new System.Drawing.Size(256, 35);
+            this.btnSupprimerCommandeDVD.TabIndex = 11;
+            this.btnSupprimerCommandeDVD.Text = "Supprimer une commande";
+            this.btnSupprimerCommandeDVD.UseVisualStyleBackColor = true;
+            this.btnSupprimerCommandeDVD.Click += new System.EventHandler(this.btnSupprimerCommandeDVD_Click);
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.Location = new System.Drawing.Point(50, 43);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(130, 20);
+            this.label101.TabIndex = 0;
+            this.label101.Text = "étape de suivi :";
+            // 
+            // btnRetourDvd
+            // 
+            this.btnRetourDvd.Location = new System.Drawing.Point(334, 218);
+            this.btnRetourDvd.Name = "btnRetourDvd";
+            this.btnRetourDvd.Size = new System.Drawing.Size(120, 37);
+            this.btnRetourDvd.TabIndex = 1;
+            this.btnRetourDvd.Text = "Retour";
+            this.btnRetourDvd.UseVisualStyleBackColor = true;
+            this.btnRetourDvd.Click += new System.EventHandler(this.btnRetourDvd_Click);
+            // 
+            // btnModifierSuiviDvd
+            // 
+            this.btnModifierSuiviDvd.Location = new System.Drawing.Point(54, 86);
+            this.btnModifierSuiviDvd.Name = "btnModifierSuiviDvd";
+            this.btnModifierSuiviDvd.Size = new System.Drawing.Size(346, 33);
+            this.btnModifierSuiviDvd.TabIndex = 2;
+            this.btnModifierSuiviDvd.Text = "Modifier l\'étape de suivi";
+            this.btnModifierSuiviDvd.UseVisualStyleBackColor = true;
+            this.btnModifierSuiviDvd.Click += new System.EventHandler(this.btnModifierSuiviDvd_Click);
+            // 
+            // cbxSuiviDvd
+            // 
+            this.cbxSuiviDvd.FormattingEnabled = true;
+            this.cbxSuiviDvd.Location = new System.Drawing.Point(54, 148);
+            this.cbxSuiviDvd.Name = "cbxSuiviDvd";
+            this.cbxSuiviDvd.Size = new System.Drawing.Size(160, 28);
+            this.cbxSuiviDvd.TabIndex = 3;
+            // 
+            // btnEnregistrerModificationSuiviDvd
+            // 
+            this.btnEnregistrerModificationSuiviDvd.Location = new System.Drawing.Point(248, 143);
+            this.btnEnregistrerModificationSuiviDvd.Name = "btnEnregistrerModificationSuiviDvd";
+            this.btnEnregistrerModificationSuiviDvd.Size = new System.Drawing.Size(152, 37);
+            this.btnEnregistrerModificationSuiviDvd.TabIndex = 4;
+            this.btnEnregistrerModificationSuiviDvd.Text = "Enregistrer";
+            this.btnEnregistrerModificationSuiviDvd.UseVisualStyleBackColor = true;
+            this.btnEnregistrerModificationSuiviDvd.Click += new System.EventHandler(this.btnEnregistrerModificationSuiviDvd_Click);
+            // 
+            // txbSuiviDVD
+            // 
+            this.txbSuiviDVD.Location = new System.Drawing.Point(215, 40);
+            this.txbSuiviDVD.Name = "txbSuiviDVD";
+            this.txbSuiviDVD.ReadOnly = true;
+            this.txbSuiviDVD.Size = new System.Drawing.Size(185, 26);
+            this.txbSuiviDVD.TabIndex = 5;
+            // 
             // FrmMediatek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -3369,6 +3599,10 @@ namespace MediaTekDocuments.view
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCoRevue)).EndInit();
+            this.gbxInfosCommandeDVD.ResumeLayout(false);
+            this.gbxInfosCommandeDVD.PerformLayout();
+            this.gbInfosSuiviDVD.ResumeLayout(false);
+            this.gbInfosSuiviDVD.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3573,9 +3807,9 @@ namespace MediaTekDocuments.view
         private System.Windows.Forms.GroupBox gbxInformationsCoDVD;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox txbDuree;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txbRayonDVD;
+        private System.Windows.Forms.TextBox txbPublicDVD;
+        private System.Windows.Forms.TextBox txbGenreDVD;
         private System.Windows.Forms.TextBox txbRealisateur;
         private System.Windows.Forms.TextBox txbCoSynopsis;
         private System.Windows.Forms.TextBox txbTitreDVD;
@@ -3626,6 +3860,26 @@ namespace MediaTekDocuments.view
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.GroupBox gbInfosSuiviDVD;
+        private System.Windows.Forms.GroupBox gbxInfosCommandeDVD;
+        private System.Windows.Forms.Button btnSupprimerCommandeDVD;
+        private System.Windows.Forms.Button btnAjoutCommandeDVD;
+        private System.Windows.Forms.Button btnSuiviDVD;
+        private System.Windows.Forms.DateTimePicker dtpCommandeDVD;
+        private System.Windows.Forms.TextBox txbMontantDVD;
+        private System.Windows.Forms.TextBox txbNbExemplairesCoDVD;
+        private System.Windows.Forms.TextBox txbNumCommandeDVD;
+        private System.Windows.Forms.Button btnEnregistrerCommandeDVD;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.TextBox txbSuiviDVD;
+        private System.Windows.Forms.Button btnEnregistrerModificationSuiviDvd;
+        private System.Windows.Forms.ComboBox cbxSuiviDvd;
+        private System.Windows.Forms.Button btnModifierSuiviDvd;
+        private System.Windows.Forms.Button btnRetourDvd;
+        private System.Windows.Forms.Label label101;
     }
 }
 
