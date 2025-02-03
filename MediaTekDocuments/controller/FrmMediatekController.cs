@@ -178,5 +178,22 @@ namespace MediaTekDocuments.controller
             return access.GetAllEcheanceAbonnement();
         }
 
+        /// <summary>
+        /// getter sur les utilisateurs
+        /// </summary>
+        /// <returns>Liste d'objets Abonnement</returns>
+        public string GetUtilisateur(string login, string password)
+        {
+            List<Utilisateur> LeUser = access.GetUtilisateur(login);
+            foreach (var user in LeUser)
+            {
+                if(user.password == password)
+                {
+                    return user.idService;
+                }
+            }
+            return "";
+        }
+
     }
 }

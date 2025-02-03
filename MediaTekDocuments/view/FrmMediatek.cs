@@ -46,6 +46,18 @@ namespace MediaTekDocuments.view
             }
         }
 
+        /// <summary>
+        /// Restreins l'accès aux onglets en fonction de l'utilisateur
+        /// </summary>
+        public void RestreindreAcces()
+        {
+            tabOngletsApplication.TabPages.Remove(tabCommandesLivres);
+            tabOngletsApplication.TabPages.Remove(tabCommandesDVD);
+            tabOngletsApplication.TabPages.Remove(tabCommandesRevue);
+            tabOngletsApplication.TabPages.Remove(tabReceptionRevue);
+            tabOngletsApplication.Enter -= tabOngletsApplication_Enter;
+        }
+
 
         /// <summary>
         /// Ouvre la fenêtre qui affiche la liste des abonnemnts qui expirent dans moins de 30 jours
@@ -1798,7 +1810,7 @@ namespace MediaTekDocuments.view
 
         #endregion
 
-
+        #region Commandes de Dvd
         private List<CommandeDocument> lesCommandesDVD = new List<CommandeDocument>();
 
         private void btnRechercheCommandesDVD_Click(object sender, EventArgs e)
@@ -2084,5 +2096,6 @@ namespace MediaTekDocuments.view
                 MessageBox.Show("Cette commande ne peut pas être supprimée", "Erreur");
             }
         }
+        #endregion
     }
 }

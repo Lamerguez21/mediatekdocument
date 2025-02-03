@@ -305,6 +305,18 @@ namespace MediaTekDocuments.dal
         }
 
         /// <summary>
+        ///récupère l'utilisateur du login
+        /// </summary>
+        /// <returns>Liste d'objets abonnement</returns>
+        public List<Utilisateur> GetUtilisateur(string login)
+        {
+            String jsonLogin = convertToJson("login", login);
+            List<Utilisateur> leUser = TraitementRecup<Utilisateur>(GET, "utilisateur/" + jsonLogin, null);
+            return leUser;
+        }
+
+
+        /// <summary>
         /// Traitement de la récupération du retour de l'api, avec conversion du json en liste pour les select (GET)
         /// </summary>
         /// <typeparam name="T"></typeparam>
