@@ -42,17 +42,33 @@ namespace MediaTekDocuments.dal
         /// méthode HTTP pour update
         private const string DELETE = "DELETE";
 
+        private static readonly string connectionName = "Mediatek.Properties.Settings.mediatekConnectionString";
+        
+        /// <summary>
+        /// Récupération de la chaîne de connexion
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        static string GetConnectionStringByName(string name)
+        {
+            string returnValue = null;
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings[name];
+            if (settings != null)
+                returnValue = settings.ConnectionString;
+            return returnValue;
+        }
+
         /// <summary>
         /// Méthode privée pour créer un singleton
         /// initialise l'accès à l'API
         /// </summary>
         private Access()
         {
-            String authenticationString;
+            String connectionString;
             try
             {
-                authenticationString = "admin:adminpwd";
-                api = ApiRest.GetInstance(uriApi, authenticationString);
+                connectionString = GetConnectionStringByName(connectionName);
+                api = ApiRest.GetInstance(uriApi, connectionString);
             }
             catch (Exception e)
             {

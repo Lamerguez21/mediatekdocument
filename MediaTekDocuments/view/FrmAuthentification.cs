@@ -48,7 +48,6 @@ namespace MediaTekDocuments.view
                             this.Close();
                             break;
                     }
-                        
                 }
                 else
                 {
@@ -66,8 +65,6 @@ namespace MediaTekDocuments.view
                 txbLogin.Focus();
             }
         }
-
-
 
     }
 }
