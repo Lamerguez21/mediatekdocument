@@ -4,7 +4,7 @@ using System;
 namespace UnitTestMediatekdoc
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTestParution
     {
         [TestMethod]
         public void TestParutionDansAbonnement()
@@ -13,15 +13,12 @@ namespace UnitTestMediatekdoc
             DateTime dateFinAbonnement = new DateTime(2022, 11, 3);
             DateTime dateParution = new DateTime(2022, 12, 4);
             bool resultatAttendu = true;
-            bool resultatActuel = ParutionDansAbonnement(dateCommande,
-           dateFinAbonnement, dateParution);
+            bool resultatActuel = ParutionDansAbonnement(dateCommande, dateFinAbonnement, dateParution);
             Assert.AreEqual(resultatAttendu, resultatActuel);
         }
-        public bool ParutionDansAbonnement(DateTime dateCommande, DateTime
-       dateFinAbonnement, DateTime dateParution)
+        public bool ParutionDansAbonnement(DateTime dateCommande, DateTime dateFinAbonnement, DateTime dateParution)
         {
-            return (DateTime.Compare(dateCommande, dateParution) < 0 &&
-           DateTime.Compare(dateParution, dateFinAbonnement) < 0);
+            return (DateTime.Compare(dateCommande, dateParution) < 0 && DateTime.Compare(dateParution, dateFinAbonnement) < 0);
         }
     }
 

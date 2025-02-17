@@ -4,6 +4,9 @@ using System.Windows.Forms;
 
 namespace MediaTekDocuments
 {
+    /// <summary>
+    /// Application de gestion des documents d'une médiathèque
+    /// </summary>
     static class Program
     {
         /// <summary>
