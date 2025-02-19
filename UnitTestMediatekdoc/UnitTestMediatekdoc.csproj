@@ -70,6 +70,11 @@
     <Compile Include="model\CommandeTests.cs" />
     <Compile Include="model\DocumentTests.cs" />
     <Compile Include="model\DvdTests.cs" />
+    <Compile Include="model\GenreTests.cs" />
+    <Compile Include="model\LivreTests.cs" />
+    <Compile Include="model\PublicTests.cs" />
+    <Compile Include="model\RayonTests.cs" />
+    <Compile Include="model\RevueTests.cs" />
     <Compile Include="model\SuiviTests.cs" />
     <Compile Include="model\UtilisateurTests.cs" />
     <Compile Include="UnitTestParution.cs" />

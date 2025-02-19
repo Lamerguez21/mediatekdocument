@@ -7,6 +7,10 @@ namespace MediaTekDocuments
     /// <summary>
     /// Application de gestion des documents d'une médiathèque
     /// </summary>
+    internal class NamespaceDoc
+    {
+
+    }
     static class Program
     {
         /// <summary>
