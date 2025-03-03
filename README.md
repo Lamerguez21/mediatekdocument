@@ -5,10 +5,10 @@ L'application exploite une API REST pour accéder à la BDD MySQL. Des explicati
 Toutes les informations relatives à cette application ainsi que les fonctionnalités de base sont décrites dans le readme du dépôt d'origine accessible à cette adresse : https://github.com/CNED-SLAM/MediaTekDocuments <br>
 Plusieurs nouvelles fenêtres ont été ajoutées :
 ## La fenêtre d'authentification
-Lors du lancement de l'application une fenêtre d'authentification s'ouvre où il est demandé de renseigner un nom d'utilisateur et un mot de passe, afin de se connecter.
+Lors du lancement de l'application une fenêtre d'authentification s'ouvre où il est demandé de renseigner un nom d'utilisateur et un mot de passe, afin de se connecter.<br>
 ![Capture d'écran 2025-03-03 224854](https://github.com/user-attachments/assets/befdf157-7e2f-48de-bc08-c11a171d7f66)
 Plusieurs utilisateurs avec des droits différents ont été configurés :<br>
-![Capture d'écran 2025-03-03 225956](https://github.com/user-attachments/assets/093a6e18-2117-4d7c-97e6-04b032d4b093)
+![Capture d'écran 2025-03-03 225956](https://github.com/user-attachments/assets/093a6e18-2117-4d7c-97e6-04b032d4b093)<br>
 Charles et Jean du service administrateur et administratif ont accès à toutes les fonctionnalités de l'application.<br>
 Marie du service prêts n'a accès qu'aux onglets de consultation des documents.<br>
 Arnaud du service culture n'a aucun droit d'accès à l'application.<br>
