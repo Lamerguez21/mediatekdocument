@@ -2,14 +2,28 @@
 Cette application permet de gérer les documents (livres, DVD, revues) d'une médiathèque. Elle a été codée en C# sous Visual Studio 2019. C'est une application de bureau, prévue d'être installée sur plusieurs postes accédant à la même base de données.<br>
 L'application exploite une API REST pour accéder à la BDD MySQL. Des explications sont données plus loin, ainsi que le lien de récupération.
 ## Présentation
-Actuellement l'application est partiellement codée. Voici les fonctionnalités actuellement opérationnelles : recherches et affichage d'informations sur les documents de la médiathèque (livres, DVD, revues), réception de nouveaux numéros de revues.<br>
-![img1](https://github.com/CNED-SLAM/MediaTekDocuments/assets/100127886/9b5a4c1b-6914-4455-94bf-fec24adba3ec)
-<br>L'application ne comporte qu'une seule fenêtre divisée en plusieurs onglets.
-## Les différents onglets
-### Onglet 1 : Livres
-Cet onglet présente la liste des livres, triée par défaut sur le titre.<br>
-La liste comporte les informations suivantes : titre, auteur, collection, genre, public, rayon.
-![img2](https://github.com/CNED-SLAM/MediaTekDocuments/assets/100127886/e3f31979-cf24-416d-afb1-a588356e8966)
+Toutes les informations relatives à cette application ainsi que les fonctionnalités de base sont décrites dans le readme du dépôt d'origine accessible à cette adresse : https://github.com/CNED-SLAM/MediaTekDocuments <br>
+Plusieurs nouvelles fenêtres ont été ajoutées :
+## La fenêtre d'authentification
+Lors du lancement de l'application une fenêtre d'authentification s'ouvre où il est demandé de renseigner un nom d'utilisateur et un mot de passe, afin de se connecter.
+![Capture d'écran 2025-03-03 224854](https://github.com/user-attachments/assets/befdf157-7e2f-48de-bc08-c11a171d7f66)
+Plusieurs utilisateurs avec des droits différents ont été configurés :<br>
+![Capture d'écran 2025-03-03 225956](https://github.com/user-attachments/assets/093a6e18-2117-4d7c-97e6-04b032d4b093)
+Charles et Jean du service administrateur et administratif ont accès à toutes les fonctionnalités de l'application.<br>
+Marie du service prêts n'a accès qu'aux onglets de consultation des documents.<br>
+Arnaud du service culture n'a aucun droit d'accès à l'application.<br>
+
+
+## Les différents nouveaux onglets
+
+
+
+### Onglet commandes de livres
+Cet onglet présente la liste des commandes de livres, triée par défaut sur la date la plus récente.<br>
+La liste comporte les informations suivantes : titre, auteur, collection, genre, public, rayon.<br>
+
+
+
 #### Recherches
 <strong>Par le titre :</strong> Il est possible de rechercher un ou plusieurs livres par le titre. La saisie dans la zone de recherche se fait en autocomplétions sans tenir compte de la casse. Seuls les livres concernés apparaissent dans la liste.<br>
 <strong>Par le numéro :</strong> il est possible de saisir un numéro et, en cliquant sur "Rechercher", seul le livre concerné apparait dans la liste (ou un message d'erreur si le livre n'est pas trouvé, avec la liste remplie à nouveau).
@@ -23,12 +37,12 @@ Le fait de cliquer sur le titre d'une des colonnes de la liste des livres, perme
 #### Affichage des informations détaillées
 Si la liste des livres contient des éléments, par défaut il y en a toujours un de sélectionné. Il est aussi possible de sélectionner une ligne (donc un livre) en cliquant n'importe où sur la ligne.<br>
 La partie basse de la fenêtre affiche les informations détaillées du livre sélectionné (numéro de document, code ISBN, titre, auteur(e), collection, genre, public, rayon, chemin de l'image) ainsi que l'image.
-### Onglet 2 : DVD
+### Onglet commandes de DVD
 Cet onglet présente la liste des DVD, triée par titre.<br>
 La liste comporte les informations suivantes : titre, durée, réalisateur, genre, public, rayon.<br>
 Le fonctionnement est identique à l'onglet des livres.<br>
 La seule différence réside dans certaines informations détaillées, spécifiques aux DVD : durée (à la place de ISBN), réalisateur (à la place de l'auteur), synopsis (à la place de collection).
-### Onglet 3 : Revues
+### Onglet abonnements de revues
 Cet onglet présente la liste des revues, triées par titre.<br>
 La liste comporte les informations suivantes : titre, périodicité, délai mise à dispo, genre, public, rayon.<br>
 Le fonctionnement est identique à l'onglet des livres.<br>
