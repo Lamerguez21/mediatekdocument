@@ -33,7 +33,7 @@ Totalement similaire à l'onglet des commandes de livres, cet onglet permet de r
 Cet onglet permet de rechercher un numéro de revue et d'afficher les informations suivantes :<br>
 - Dans un premier groupbox les informations détaillées de la revue recherchée.<br>
 - Une liste de tous les abonnements qui concernent cette revue (un abonnement équivaut à une commande de revue), avec les possibilités de tris sur les colonnes de date de fin d'abonnement, de date de commande et de montant.<br>
-- Un second groupbox qui affiche les informations détaillées de l'abonnement sélectionné, et qui permet d'ajouter un nouvel abonnement à cette revue ou de supprimer celui sélectionné après confirmation.
+- Un second groupbox qui affiche les informations détaillées de l'abonnement sélectionné, et qui permet d'ajouter un nouvel abonnement à cette revue ou de supprimer celui sélectionné après confirmation. A noter que lors de l'ajout d'une nouvelle commande, des exemplaires au même nombre que le nombre d'exemplaires saisis sont automatiquement créés pour cette revue en commençant par le numéro 1 si aucun autre exemplaire n'existe et en incrémentant de 1 chaque exemplaire ajouté.
 
 ## La base de données
 La base de données 'mediatek86 ' au format MySQL a été modifiée.<br>
@@ -48,7 +48,8 @@ La table utilisateur permet d'enregistrer un id, un login, un password et un id 
 L'accès à la BDD se fait à travers une API REST protégée par une authentification basique.<br>
 Le code de l'API se trouve ici :<br>
 https://github.com/Lamerguez21/API-rest<br>
-avec toutes les explications pour l'utiliser (dans le readme).
+avec toutes les explications pour l'utiliser (dans le readme).<br>
+Vous pouvez également directement y accéder avec l'url suivant : http://restmediatekdocuments.getenjoyment.net/
 
 ## Installation de l'application
 Pour installer l'application pour pouvoir l'utiliser il suffit de télécharger uniquement le fichier installeur Mediatek.msi disponible dans la liste des fichiers du dépôt.<br>
