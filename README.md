@@ -51,6 +51,6 @@ https://github.com/Lamerguez21/API-rest<br>
 avec toutes les explications pour l'utiliser (dans le readme).
 
 ## Installation de l'application
-Pour installer l'application pour pouvoir l'utiliser il suffit de télécharger uniquement le fichier Mediatek.msi disponible dans la liste des fichiers du dépôt.<br>
+Pour installer l'application pour pouvoir l'utiliser il suffit de télécharger uniquement le fichier installeur Mediatek.msi disponible dans la liste des fichiers du dépôt.<br>
 Après avoir suivi les étapes d'installation l'application est prête à être utilisée.
 
